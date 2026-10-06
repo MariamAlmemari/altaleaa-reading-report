@@ -1,0 +1,19 @@
+{
+  "name": "talia-reading-record",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/Page.tsx --bundle --format=iife --platform=browser --jsx=automatic --define:process.env.NODE_ENV=\"\\\"production\\\"\" --outfile=app.js --legal-comments=inline"
+  },
+  "dependencies": {
+    "html5-qrcode": "2.3.8",
+    "lucide-react": "1.31.0",
+    "qrcode": "1.5.4",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.0"
+  }
+}
